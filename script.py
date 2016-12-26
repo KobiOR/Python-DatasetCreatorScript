@@ -15,6 +15,7 @@ for folder in directories:
                 pass
             else:
                 im = Image.open(input_dir + "/" + folder + "/" + image)
+                print im.size
                 im_resized = im.resize(size, Image.ANTIALIAS)
                 im_resized.save(image, "jpeg")# Opening image
                 im_resized = (np.array(im_resized))  # Converting to numpy array
