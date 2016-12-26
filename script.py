@@ -6,7 +6,7 @@ input_dir = "/Users/admin/Desktop/DataSet"  # Folders should be arranged hierarc
 
 directories = listdir(input_dir)
 variable = []
-size = 350, 350
+size = 32, 32
 for folder in directories:
     if folder != ".DS_Store":
         folder2 = listdir(input_dir + '/' + folder)
